@@ -2,7 +2,6 @@ import { apply, mergeWith, move, Rule, SchematicContext, SchematicsException, st
 // 需要先在終端機中輸入 'npm install @schematics/angular -S'
 // import { parseName } from '@schematics/angular/utility/parse-name';
 // import { buildDefaultPath } from '@schematics/angular/utility/workspace';
-import { HelloWorldSchema } from './schema';
 
 // You don't have to export the function as default. You can also have more than one rule factory
 // per file.
@@ -17,7 +16,7 @@ export function helloWorld(_options: HelloWorldSchema): Rule {
 
     //解析出专案的正确路径与档名
     const workspaceConfig = JSON.parse(workspaceConfigBuffer.toString());
-    const projectName = _options.project || workspaceConfig.defaultProject;
+    const projectName = _options.project || workspaceConfig.defaultProject || 'hello';
     // console.log('projectName....',projectName);
     const project = workspaceConfig.projects[projectName]
     // console.log('project....',project);
