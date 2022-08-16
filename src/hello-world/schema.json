@@ -12,16 +12,7 @@
                 "$source":"argv",
                 "index": 0
             },
-            "x-prompt":{
-                "message":"What name would you like?",
-                "type":"list",
-                "items":[
-                    {"value":"leo","label":"Leo"},
-                    {"value":"kevin","label":"Kevin"},
-                    {"value":"mike","label":"Mike"},
-                    {"value":"will","label":"Will"}
-                ]
-            }
+            "x-prompt":"What name would you like?"
         }
     },
     "required": [
