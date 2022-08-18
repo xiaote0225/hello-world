@@ -3,6 +3,7 @@ import * as path from 'path';
 
 import { Schema as ApplicationOptions, Style } from '@schematics/angular/application/schema';
 import { Schema as WorkspaceOptions } from '@schematics/angular/workspace/schema';
+import { HelloWorldSchema } from './schema';
 
 const collectionPath = path.join(__dirname, '../collection.json');
 

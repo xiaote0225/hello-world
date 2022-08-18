@@ -9,6 +9,7 @@ import { addDeclarationToModule } from '@schematics/angular/utility/ast-utils';
 import { InsertChange } from '@schematics/angular/utility/change';
 
 import * as ts from '@schematics/angular/third_party/github.com/Microsoft/TypeScript/lib/typescript';
+import { HelloWorldSchema } from './schema';
 
 // You don't have to export the function as default. You can also have more than one rule factory
 // per file.
