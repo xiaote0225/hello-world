@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema",
-    "$id": "HelloWorldSchema",
+    "id": "HelloWorldSchema",
     "title": "Hello Schema",
     "description": "Generate a file of JavaScript",
     "type":"object",

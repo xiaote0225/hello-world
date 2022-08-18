@@ -87,7 +87,7 @@ describe('hello-world', () => {
     //读取档案
     const moduleContent = appTree.readContent('/projects/hello/src/app/app.module.ts');
     //验证是否有正确的import进去
-    expect(moduleContent).toMatch(/import.*HelloLeoChen.*from '.\/feature\/hello-leo-chen.component.ts'/);
+    expect(moduleContent).toMatch(/import.*HelloLeoChen.*from '.\/hello-leo-chen.component'/);
     //验证是否有正确加进declarations里
     expect(moduleContent).toMatch(/declarations:\s*\[[^\]]+?,\r?\n\s+HelloLeoChenComponent\r?\n/m);
   });
@@ -104,7 +104,7 @@ describe('hello-world', () => {
     expect(appTree.files).toContain('/projects/world/src/app/hello-leo-chen.component.ts');
 
     const moduleContent = appTree.readContent('/projects/world/src/app/app.module.ts');
-    expect(moduleContent).toMatch(/import.*HelloLeoChen.*from '.\/feature\/hello-leo-chen.component.ts'/);
+    expect(moduleContent).toMatch(/import.*HelloLeoChen.*from '.\/hello-leo-chen.component'/);
     expect(moduleContent).toMatch(/declarations:\s*\[[^\]]+?,\r?\n\s+HelloLeoChenComponent\r?\n/m);
   });
 
