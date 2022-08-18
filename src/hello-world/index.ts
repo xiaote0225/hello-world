@@ -134,7 +134,6 @@ export function helloWorld(_options: HelloWorldSchema): Rule {
     //把变更记录提交给Tree,Tree会自动帮我们变更
     _tree.commitUpdate(declarationRecorder);
     //重新读取档案并打印出来看看
-    console.log(_tree.read(`/projects/${projectName}/src/app/app.module.ts`)!.toString());
 
     const sourceTemplates = url('./files');
     const sourceParametrizedTemplates = apply(sourceTemplates, [
