@@ -1,6 +1,5 @@
 import { buildDefaultPath } from '@schematics/angular/utility/project';
 import { Rule, SchematicContext, SchematicsException, Tree } from '@angular-devkit/schematics';
-import { HelloWorldSchema } from '../hello-world/schema';
 
 import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
 import { addImportToModule } from '@schematics/angular/utility/ast-utils';
@@ -8,7 +7,7 @@ import { InsertChange } from '@schematics/angular/utility/change';
 
 import * as ts from '@schematics/angular/third_party/github.com/Microsoft/TypeScript/lib/typescript';
 
-export default function(_options:HelloWorldSchema):Rule{
+export default function(_options:NgAddSchema):Rule{
     return (_tree:Tree,_context:SchematicContext) => {
 
         //如果不是Angular专案则抛出错误

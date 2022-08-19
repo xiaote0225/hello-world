@@ -4,6 +4,9 @@ src/**/*.js
 src/**/*.js.map
 src/**/*.d.ts
 
+!src/hello-world/schema.d.ts
+!src/ng-add/schema.d.ts
+
 # IDEs
 .idea/
 jsconfig.json
