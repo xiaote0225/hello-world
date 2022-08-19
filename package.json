@@ -23,5 +23,8 @@
     "@types/jasmine": "^3.3.9",
     "@types/node": "^8.0.31",
     "jasmine": "^3.3.1"
+  },
+  "ng-update": {
+    "migrations": "./src/migration.json"
   }
 }

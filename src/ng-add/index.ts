@@ -132,7 +132,7 @@ export default function(_options:NgAddSchema):Rule{
         });
           
         // 印出結果
-        console.log(readIntoSourceFile(_tree, 'package.json').text);
+        // console.log(readIntoSourceFile(_tree, 'package.json').text);
 
         _context.addTask(
             new NodePackageInstallTask({
